@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+
+<head>
+
+
+
+    <title>Graph'Contact</title>
+    <meta charset="utf-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!---fonts---->
+
+    <link rel="stylesheet" href="Ressources/Generica.otf">
+    <link rel="stylesheet" href="Ressources/mustardo/mustardo.ttf">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!---------icones---->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+
+    <!---favicones onglet---->
+
+    <link rel="shortcut icon" href="Ressources/Images/Icone-site-GRAPHCONTACT.png" type="image/x-icon">
+
+    <!---------styles---->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset-eric-mayer.css">
+    <link rel="stylesheet" href="javascript.js">
+
+
+    <!---pages---->
+
+    <link rel="stylesheet" href="index.html">
+
+
+
+    <!--bootstrap-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+
+
+
+</head>
+
+<body tyle="background: Black">
+
+
+
+
+    <!-----NAVBAR---------------
+            =============== -->
+
+
+    
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.77)">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="text-white mt-3">Graph<span class="mots-vert" style="font-size: 40px">'</span>Contact</h1>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="monMenu" aria-label="Menu pour mobile">
+                    <span data-brackets-id='1409' class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse pr-5 mr-5" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-items nav-link" style="font-size: 15px" href="index.html">
+                            <span>HOME</span>
+                        </a>
+                        <a class="nav-items nav-link" style="font-size: 15px" href="index.html#apropos">
+                            <span>A PROPOS</span>
+                        </a>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-items nav-link text-white" data-toggle="dropdown" style="font-size: 15px"><span>PORTFOLIO</span>
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu pl-4 pr-4" style="background: rgba(0, 0, 0, 0.77)">
+          <li><a href="#"><span>Affiches et Flyers</span></a></li>
+          <li><a href="logos.html"><span>Logos</span></a></li>
+          <li><a href="#"><span>Supports variés</span></a></li>
+        </ul>
+      </div>
+
+                        <a class="nav-items nav-link" style="font-size: 15px" href="">
+                            <span>CONTACT</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+    <!------ GALERIE LOGOS-----------
+============== -->
+
+    <section class="logos">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="top-titres text-center pt-5 pb-2">LOGOS</h4>
+                
+            </div>
+        </div>
+
+
+
+        <!--------CSS------->
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .row>.column {
+                padding: 0 8px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .top-slide img {
+                display: flex;
+                flex-flow: row nowrap;
+            
+            }
+            
+            .column {
+                float: left;
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px
+            }
+
+            /* The Modal (background) */
+            .modal {
+                margin: 0 auto;
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.67),
+            rgba(18, 162, 155, 0.8)), url("Ressources/Design/Background-black.png");;
+            }
+
+            /* Modal Content */
+            .modal-content {
+                position: relative;
+                background-color: transparent;
+                margin: auto;
+                width: 90%;
+                max-width: 90%;
+                margin-top: 5%
+            }
+
+            /* The Close Button */
+            .close {
+                color: white;
+                position: absolute;
+                top: 15%;
+                right: 10%;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #d8d7d7;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .mySlides {
+                display: none;
+                width: 50%;
+                margin: 0 auto;
+            }
+            
+            .mySlides img {
+                text-align: center;
+                margin: 0 auto;
+                
+            }
+
+            .cursor {
+                cursor: pointer;
+                top: 15%;
+                right: 10%;
+                font-size: 50px
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                top: 25%;
+                cursor: pointer;
+                position: absolute;
+                width: 40%;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                transition: 0.4s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+                
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.01);
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.72);
+                transform: scale(1.5,1.5)
+            }
+
+            /* Number text (1/3 etc) */
+            
+
+            img {
+                margin-bottom: -4px;
+                
+            }
+
+            .caption-container {
+                text-align: center;
+                padding: 2px 16px;
+                color: white;
+            }
+
+            .demo {
+                opacity: 0.6;
+            }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+            img.hover-shadow {
+                transition: 0.3s;
+            }
+
+            .hover-shadow:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+        </style>
+        
+        <!--------HTML------->
+
+        <body>
+
+            
+
+            <div class="row top-slide pt-5 pr-5 pl-5">
+              
+               <div class="column-1">
+                <div class="column">
+                    <img src="Ressources/Crea/HOLISPORT%20web.jpg" style="height:300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Ressources/Crea/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Ressources/Crea/Logo-West-Truck-Design_.png" style="height:300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Ressources/Crea/Logo-%C3%A9ventail-+-web.png" style="height:300px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img  src="Ressources/Crea/HOLISPORT%20web.jpg" style="height:300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                
+                </div>
+                
+                <div class="column-2">
+                <div class="column">
+                    <img src="Ressources/Crea/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Ressources/Crea/Logo-West-Truck-Design_.png" style="height:300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Ressources/Crea/Logo-%C3%A9ventail-+-web.png" style="height:300px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div data-brackets-id='1437' class="modal-content text-center">
+
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/HOLISPORT%20web.jpg" style="height:500px">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:500px">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/Logo-West-Truck-Design_.png" style="height:500px">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/Logo-%C3%A9ventail-+-web.png" style="height:500px">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/HOLISPORT%20web.jpg" style="height:500px">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:500px">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="Ressources/Crea/Logo-West-Truck-Design_.png" style="height:500px">
+                    </div>
+
+                    <div class="mySlides">
+                        <img data-brackets-id='1473' src="Ressources/Images/Crea/Logo-%C3%A9ventail-+-web.png" style="height:500px">
+                    </div>
+
+                    
+
+                   
+                <div class="img demo pt-5">
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/HOLISPORT%20web.jpg" style="height:200px" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:200px" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Logo-West-Truck-Design_.png" style="height:200px" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logo-%C3%A9ventail-+-web.png" style="height:200px" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/HOLISPORT%20web.jpg" style="height:200px" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:200px" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logo-West-Truck-Design_.png" style="height:200px" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logo-%C3%A9ventail-+-web.png" style="height:200px" onclick="currentSlide(4)">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                </div>
+                
+            </div>
+
+           <!--------JAVASCRIPT------->
+           
+            <script>
+                function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                }
+
+                function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                }
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+
+            </script>
+
+
+        </body>
+
+
+    </section>
+
+
+
+    <!-----SCRIPT-------->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

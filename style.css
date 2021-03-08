@@ -1,0 +1,377 @@
+/* CHARTE GRAPHIQUE *****
+
+couleurs titre:  vert #12a29b
+
+
+*/
+
+
+
+html {
+    font-family: "Generica", sans-serif;
+    font-family: 'Mustardo', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
+    width: 100vw;
+    letter-spacing: 2px;
+}
+
+
+h2,
+h3 {
+    color: white;
+    letter-spacing: 2px
+
+}
+
+h1 {
+    font-family: 'Mustardo', sans-serif;
+    color: #12a29b;
+}
+
+html h3 {
+    font-family: "Generica", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+html h4 {
+    font-family: "Generica", sans-serif;
+    font-size: 110%;
+    color: #12a29b;
+    letter-spacing: 2px
+}
+
+p {
+    color: white;
+    font-family: "Generica", sans-serif;
+}
+
+section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.mots-vert {
+    color: #12a29b;
+    font-size: 110%;
+
+}
+
+
+/* **** NAVBAR ********
+============ */
+
+.navbar {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 110%;
+    padding: 0px 15px 0px 15px;
+    width: 100vw;
+}
+
+.navbar-brand h1 {
+    font-size: 140%
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s
+}
+
+#monMenu h3 {
+    margin-left: 30px;
+    color: white;
+
+}
+
+#monMenu {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-items span {
+    font-family: "Generica", sans-serif;
+    color: white;
+    padding: 0 5px 0 5px;
+    letter-spacing: 3px
+    
+}
+
+.nav-items span:hover {
+    color: #12a29b;
+    transform: scale(1.1, 1.1);
+    transition: 0.6s;
+    
+}
+
+.dropdown a {
+    color: white;
+    font-family: "Generica", sans-serif;
+    text-transform: uppercase;
+    width: 
+
+}
+
+.dropdown a:hover {
+    color: #12a29b;
+    transition: 0.6s;
+    text-decoration: inherit
+}
+
+.dropdown-menu {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 140%;
+    line-height: 170%
+}
+
+.dropdown-toggle span {
+
+}
+    
+
+
+/* ***TITRES**** */
+
+.titre {
+    font-size: 350%;
+    word-spacing: 12px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.top-titres {
+    color: white;
+    font-size: 300%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0% 0 2% 0 
+}
+
+/* *****BUTTONS***** */
+
+.btn-galerie {
+
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    padding: 5px 30px 5px 30px;
+    border: 2px white solid;
+    margin-top: 10px;
+    font-family: "Generica", sans-serif;
+    letter-spacing: 2px;
+    box-shadow: white 0px 3px 0px 0px
+}
+
+.btn-galerie:hover {
+    background-color: black;
+    color: #12a29b;
+    border: 3px transparent solid;
+    transition: 0.6s;
+    text-decoration: none;
+    text-transform: none;
+    box-shadow: #12a29b 0px 3px 0px 0px
+    
+
+}
+
+/* **** HEADER ***** 
+====================== */
+
+header {
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.97),
+            rgba(0, 114, 109, 0.97),  rgba(18, 162, 155, 0.91)), url("Ressources/Design/Post-Insta.png");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10%;
+
+}
+
+#logo {
+    width: 30vw;
+    margin: 0 auto;
+    padding-top: 8.5vh;
+
+}
+
+
+
+/* ****SERVICES**** */
+
+.services {
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.46), rgb(0, 0, 0)), url("Ressources/Design/Background-black.png");
+    height: 100%;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services h2 {
+    text-transform: uppercase;
+    font-family: "Generica", sans-serif;
+    font-size: 130%;
+    line-height: 40px
+    
+}
+
+.services i {
+    color: white;
+}
+
+.services i:hover {
+    color: #12a29b;
+    transform: translateY(-10px);
+    transition: 0.5s
+}
+
+/* **** GALERIE ***** 
+======================== */
+
+.portfolio {
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.67),
+            rgba(18, 162, 155, 0.8)), url("Ressources/Design/Background-black.png");
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.print {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%
+}
+
+.print img {
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 50px 1px
+}
+
+.covers:hover {
+    transform: rotate(1deg) scale(1.02);
+    transition: 0.6s;
+
+}
+
+
+#texte-portfolio {
+    width: 100%
+}
+
+
+.logos-supports img {
+    width: 90%;
+
+}
+
+
+/* **** A PROPOS ***** 
+======================== */
+
+.apropos {
+    background-image: linear-gradient(to top, rgba(188, 188, 188, 0.21), rgb(0, 0, 0)), url("Ressources/Design/cover-a-propos copie.jpg");
+    margin: 0 auto;
+    height: 100%;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.apropos h3 {
+    font-size: 120%
+}
+
+.text-apropos {
+    width: 90vw;
+    text-align: justify;
+}
+
+.bordure {
+    padding: 0 40px 0 40px;
+    border-left: 3px #12a29b solid;
+    border-right: 3px #12a29b solid;
+}
+
+
+.freelance {
+    width: 100%;
+}
+
+.liste h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ******
+===================***PAGE GALERIE*** */
+/* ========================================== */
+
+.logos {
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.58),
+            rgba(18, 162, 155, 0.7)), url("./Ressources/Design/Background-black.png");
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.mySlides img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* **** FOOTER ***** 
+======================== */
+
+footer {
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+    font-family: "Generica", cursive;
+    color: white;
+
+}
+
+
+footer a i {
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+footer a i:hover {
+    color: #12a29b;
+    transition: 0.5s;
+    transform: scale(1.3, 1.3);
+    
+}
+
+footer div div p  {
+    letter-spacing: 3px;
+    
+}
+
+footer {
+    line-height: 0
+}
