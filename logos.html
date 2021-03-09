@@ -164,9 +164,7 @@
                 display: none;
                 position: fixed;
                 z-index: 1;
-                padding-top: 100px;
-                left: 0;
-                top: 0;
+                padding-top: 5em;
                 width: 100vw;
                 height: 100%;
                 overflow: auto;
@@ -180,6 +178,7 @@
             .modal-content {
                 position: relative;
                 background-color: transparent;
+                border: transparent;
                 margin: auto;
                 width: 85%;
                 max-width: 90%;
@@ -190,7 +189,7 @@
             .close {
                 color: white;
                 position: absolute;
-                top: 15%;
+                top: 20%;
                 right: 10%;
                 font-size: 50px;
                 font-weight: bold;
@@ -208,7 +207,7 @@
                 display: flex;
                 justify-content: center;
                 align-content: center;
-                width: 100%;
+                width: 100vw;
                 margin: 0 auto;
                 padding: 0 2% 0 2%
             }
@@ -219,6 +218,8 @@
                 display: flex;
                 justify-content: center;
                 align-content: center;
+                width: auto;
+                height: 450px;
 
 
             }
@@ -226,7 +227,7 @@
             .cursor {
                 cursor: pointer;
                 top: 15%;
-                right: 10%;
+                right: 15%;
                 font-size: 50px
             }
 
@@ -236,7 +237,6 @@
                 cursor: pointer;
                 position: absolute;
                 width: 10px;
-                padding: 16px;
                 color: white;
                 font-weight: bold;
                 font-size: 40px;
@@ -264,14 +264,14 @@
             /* Position the "next & prev button" to the right & left */
             .next {
                 text-align: right;
-                right: 25%;
+                right: 20%;
                 border-radius: 3px 0 0 3px;
                 display: flex;
             }
 
             .prev {
                 text-align: left;
-                left: 25%;
+                left: 20%;
                 border-radius: 3px 3px 0 0;
                 display: flex;
             }
@@ -289,6 +289,12 @@
 
 
             img {
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
                 margin-bottom: -4px;
                 border-radius: 2%;
                 height: 150px;
@@ -305,6 +311,11 @@
                 opacity: 0.6;
                 display: flex;
                 flex-flow: row wrap;
+            }
+            
+            .img-demo {
+                width: 50vw;
+                margin: 0 auto
             }
 
             .active,
@@ -324,6 +335,10 @@
             ========================= */
 
             @media screen and (max-width:768px) {
+                
+                .cursor {
+                    top: 8%
+                }
 
                 .next {
                     right: 3px;
@@ -334,44 +349,64 @@
                     left: 3px;
                 }
 
-                .cursor {
-                    right: 4%
-                }
-                
                 .top-slide img {
+                    display: flex;
                     flex-flow: column wrap;
                     justify-content: center;
+                    margin: 0 auto;
                 }
-                
+
                 .column-1 {
                     margin: 0 auto;
-                    flex-flow: column wrap;
                     justify-content: center;
                     text-align: center;
+                    width: 70%;
                 }
                 
+                .column-1 img {
+                    max-width: 100px;
+                    max-height: 80px;
+                }
+
                 .column {
                     margin: 0 auto;
                     display: flex;
                     justify-content: center;
                     text-align: center;
-                    
+
                 }
-                
-                img {
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    flex-direction: column;
-                }
-                
+
                 .modal {
                     display: flex;
                     margin: 0 auto;
                     justify-content: center;
                     flex-direction: column;
                 }
+                
+                .mySlides {
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100vw;
+                    flex-flow: row nowrap
+                    
+                }
+                
+                .mySlides img {
+                    margin: 0 auto;
+                    text-align: center;
+                    width: auto;
+                    height: 200px
+                }
+                
+                .demo {
+                    max-width: 100%;
+                    max-height: 30px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+                
             }
 
         </style>
@@ -384,9 +419,9 @@
 
 
 
-            <div class="container m-auto text-center row top-slide pt-5 pr-5 pl-5">
+            <div class="container m-auto text-center row top-slide">
 
-                <div class="column-1 m-auto">
+                <div class="column-1">
                     <div class="column">
                         <img src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:250px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
@@ -455,11 +490,11 @@
 
             </div>
 
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal mt-5">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div data-brackets-id='1437' class="modal-content text-center">
 
-                    <div class="img-next">
+                    <div class="img-next mt-5">
 
 
 
@@ -470,72 +505,72 @@
 
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:25em">
+                            <img src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg">
                         </div>
 
                         <div class="mySlides text-center m-auto">
-                            <img src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg" style="height:20em">
+                            <img src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/HOLISPORT%20web.jpg" style="height:20em">
+                            <img src="Ressources/Crea/Logos/HOLISPORT%20web.jpg">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Hilda%20Cover.jpg" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Hilda%20Cover.jpg">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo-ACP.png" style="height:18em">
+                            <img src="Ressources/Crea/Logos/Logo-ACP.png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg">
                         </div>
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg" style="height:20em">
-                        </div>
-
-                        <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg" style="height:20em">
-                        </div>
-                        <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/Logo%20Tvert.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Logos/Logo%20Tvert.png">
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/I-VENT.jpg" style="height:18em">
+                            <img src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Logos/I-VENT.jpg">
                         </div>
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Logos/CERUM-logo-marque.png" style="height:20em">
+                            <img src="Ressources/Crea/Logos/CERUM-logo-marque.png">
                         </div>
                     </div>
 
@@ -543,70 +578,70 @@
 
                 <div class="img-demo demo pt-5">
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:200px" onclick="currentSlide(1)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" onclick="currentSlide(1)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" style="height:200px" onclick="currentSlide(2)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" onclick="currentSlide(2)">
                     </div>
                     <div class="column">
-                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png" style="height:200px" onclick="currentSlide(3)">
+                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png"  onclick="currentSlide(3)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg" style="height:200px" onclick="currentSlide(4)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg"  onclick="currentSlide(4)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/HOLISPORT%20web.jpg" style="height:200px" onclick="currentSlide(5)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/HOLISPORT%20web.jpg"  onclick="currentSlide(5)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png" style="height:200px" onclick="currentSlide(6)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png" onclick="currentSlide(6)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png" style="height:200px" onclick="currentSlide(7)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png"  onclick="currentSlide(7)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png" style="height:200px" onclick="currentSlide(8)">
-                    </div>
-
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Hilda%20Cover.jpg" style="height:200px" onclick="currentSlide(9)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png"  onclick="currentSlide(8)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-ACP.png" style="height:200px" onclick="currentSlide(10)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Hilda%20Cover.jpg" onclick="currentSlide(9)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg" style="height:200px" onclick="currentSlide(11)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-ACP.png" onclick="currentSlide(10)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg" style="height:200px" onclick="currentSlide(12)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg" onclick="currentSlide(11)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg" style="height:200px" onclick="currentSlide(13)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg" onclick="currentSlide(12)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg" style="height:200px" onclick="currentSlide(14)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg"  onclick="currentSlide(13)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Tvert.png" style="height:200px" onclick="currentSlide(15)">
-                    </div>
-
-
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png" style="height:200px" onclick="currentSlide(16)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg"  onclick="currentSlide(14)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/I-VENT.jpg" style="height:200px" onclick="currentSlide(17)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Tvert.png"  onclick="currentSlide(15)">
                     </div>
 
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/CERUM-logo-marque.png" style="height:200px" onclick="currentSlide(18)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png"  onclick="currentSlide(16)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/I-VENT.jpg"  onclick="currentSlide(17)">
+                    </div>
+
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/CERUM-logo-marque.png"  onclick="currentSlide(18)">
                     </div>
 
                 </div>
