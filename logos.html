@@ -149,6 +149,15 @@
                 flex-flow: row wrap;
                 justify-content: center
             }
+            
+            .column-1 img {
+                    margin: 0 auto;
+                    justify-content: center;
+                    text-align: center;
+                    align-content: center;
+                    max-width: 100%;
+                    max-height: 180px;
+                }
 
             .column {
 
@@ -182,7 +191,7 @@
                 margin: auto;
                 width: 85%;
                 max-width: 90%;
-                margin-top: 5%
+                margin-top: %
             }
 
             /* The Close Button */
@@ -226,9 +235,9 @@
 
             .cursor {
                 cursor: pointer;
-                top: 15%;
+                top: 10%;
                 right: 15%;
-                font-size: 50px
+                font-size: 60px
             }
 
             /* Next & previous buttons */
@@ -312,9 +321,9 @@
                 display: flex;
                 flex-flow: row wrap;
             }
-            
+
             .img-demo {
-                width: 50vw;
+                width: 80vw;
                 margin: 0 auto
             }
 
@@ -335,7 +344,7 @@
             ========================= */
 
             @media screen and (max-width:768px) {
-                
+
                 .cursor {
                     top: 8%
                 }
@@ -360,12 +369,16 @@
                     margin: 0 auto;
                     justify-content: center;
                     text-align: center;
-                    width: 70%;
+                    width: 100vw;
                 }
-                
+
                 .column-1 img {
-                    max-width: 100px;
-                    max-height: 80px;
+                    margin: 0 auto;
+                    justify-content: center;
+                    text-align: center;
+                    align-content: center;
+                    max-width: 100%;
+                    max-height: 50px;
                 }
 
                 .column {
@@ -382,31 +395,30 @@
                     justify-content: center;
                     flex-direction: column;
                 }
-                
+
                 .mySlides {
                     margin: 0 auto;
                     text-align: center;
                     width: 100vw;
                     flex-flow: row nowrap
-                    
                 }
-                
+
                 .mySlides img {
                     margin: 0 auto;
                     text-align: center;
                     width: auto;
                     height: 200px
                 }
-                
+
                 .demo {
                     max-width: 100%;
-                    max-height: 30px;
+                    max-height: 60px;
                     margin: 0 auto;
                     display: flex;
                     justify-content: center;
                     text-align: center;
                 }
-                
+
             }
 
         </style>
@@ -419,7 +431,7 @@
 
 
 
-            <div class="container m-auto text-center row top-slide">
+            <div class="m-auto text-center row top-slide pr-5 pl-5 mr-5 ml-5">
 
                 <div class="column-1">
                     <div class="column">
@@ -482,6 +494,21 @@
                     <div class="column">
                         <img src="Ressources/Crea/Logos/CERUM-logo-marque.png" style="height:250px" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
                     </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Logos/Logo-Oldham.png" style="height:250px" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Logos/MN-secretariat.png" style="height:250px" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Logos/Logo-table-3-PROvinces.png" style="height:250px" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Logos/Logo-acvt.png" style="height:250px" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+                    </div>
+
 
 
 
@@ -572,6 +599,18 @@
                         <div class="mySlides">
                             <img src="Ressources/Crea/Logos/CERUM-logo-marque.png">
                         </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Logos/Logo-Oldham.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Logos/MN-secretariat.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Logos/Logo-table-3-PROvinces.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Logos/Logo-acvt.png">
+                        </div>
                     </div>
 
                 </div>
@@ -584,22 +623,22 @@
                         <img class="demo cursor" src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" onclick="currentSlide(2)">
                     </div>
                     <div class="column">
-                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png"  onclick="currentSlide(3)">
+                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png" onclick="currentSlide(3)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg"  onclick="currentSlide(4)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg" onclick="currentSlide(4)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/HOLISPORT%20web.jpg"  onclick="currentSlide(5)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/HOLISPORT%20web.jpg" onclick="currentSlide(5)">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png" onclick="currentSlide(6)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png"  onclick="currentSlide(7)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png" onclick="currentSlide(7)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png"  onclick="currentSlide(8)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png" onclick="currentSlide(8)">
                     </div>
 
                     <div class="column">
@@ -619,29 +658,42 @@
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg"  onclick="currentSlide(13)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg" onclick="currentSlide(13)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg"  onclick="currentSlide(14)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg" onclick="currentSlide(14)">
                     </div>
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Tvert.png"  onclick="currentSlide(15)">
-                    </div>
-
-
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png"  onclick="currentSlide(16)">
-                    </div>
-
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/I-VENT.jpg"  onclick="currentSlide(17)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Tvert.png" onclick="currentSlide(15)">
                     </div>
 
 
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/CERUM-logo-marque.png"  onclick="currentSlide(18)">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png" onclick="currentSlide(16)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/I-VENT.jpg" onclick="currentSlide(17)">
+                    </div>
+
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/CERUM-logo-marque.png" onclick="currentSlide(18)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Oldham.png" onclick="currentSlide(19)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/MN-secretariat.png" onclick="currentSlide(20)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-table-3-PROvinces.png" onclick="currentSlide(21)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-acvt.png" onclick="currentSlide(22)">
                     </div>
 
                 </div>

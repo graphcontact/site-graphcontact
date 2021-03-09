@@ -5,7 +5,15 @@ couleurs titre:  vert #12a29b
 
 */
 
-
+@font-face {
+    font-family: "Generica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../Ressources/mustardo.ttf")
+        format('truetype'),
+    
+}
 
 html {
     font-family: "Generica", sans-serif;
@@ -339,11 +347,6 @@ header {
     background-image: url("../Ressources/Design/Background-black.png")
 }
 
-.mySlides img {
-    text-align: center;
-    margin: 0 auto;
-}
-
 
 /* **** FOOTER ***** 
 ======================== */
@@ -352,7 +355,7 @@ footer {
     background-color: black;
     width: 100vw;
     height: 100%;
-    font-family: "Generica", cursive;
+    font-family: "Generica", sans-serif;
     color: white;
 
 }
@@ -379,3 +382,6 @@ footer div div p  {
 footer {
     line-height: 0
 }
+
+
+
