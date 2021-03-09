@@ -186,7 +186,7 @@ section {
 
 header {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.97),
-            rgba(0, 114, 109, 0.97),  rgba(18, 162, 155, 0.91)), url("Ressources/Design/Post-Insta.png");
+            rgba(0, 114, 109, 0.97),  rgba(18, 162, 155, 0.91)), url("../Ressources/Design/Post-Insta.png");
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -209,7 +209,7 @@ header {
 
 .services {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.46), rgb(0, 0, 0)), url("Ressources/Design/Background-black.png");
+            rgba(0, 0, 0, 0.46), rgb(0, 0, 0)), url("../Ressources/Design/Background-black.png");
     height: 100%;
     width: 100vw;
     background-attachment: fixed;
@@ -241,7 +241,7 @@ header {
 
 .portfolio {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.67),
-            rgba(18, 162, 155, 0.8)), url("Ressources/Design/Background-black.png");
+            rgba(18, 162, 155, 0.8)), url("../Ressources/Design/Background-black.png");
     height: 100%;
     width: 100vw;
     background-position: center;
@@ -284,7 +284,7 @@ header {
 ======================== */
 
 .apropos {
-    background-image: linear-gradient(to top, rgba(188, 188, 188, 0.21), rgb(0, 0, 0)), url("Ressources/Design/cover-a-propos copie.jpg");
+    background-image: linear-gradient(to top, rgba(188, 188, 188, 0.21), rgb(0, 0, 0)), url("../Ressources/Design/cover-a-propos copie.jpg");
     margin: 0 auto;
     height: 100%;
     width: 100vw;
@@ -321,18 +321,22 @@ header {
 }
 
 /* ******
-===================***PAGE GALERIE*** */
+===================***PAGE LOGOS*** */
 /* ========================================== */
 
 .logos {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.58),
-            rgba(18, 162, 155, 0.7)), url("./Ressources/Design/Background-black.png");
+            rgba(18, 162, 155, 0.7)), url("../Ressources/Design/Background-black.png");
     height: 100%;
     width: 100vw;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
    
+}
+
+.body-logos {
+    background-image: url("../Ressources/Design/Background-black.png")
 }
 
 .mySlides img {
