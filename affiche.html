@@ -175,10 +175,9 @@
                 z-index: 1;
                 padding-top: 5em;
                 max-width: 100vw;
-                height: 100%;
+                height: 100vh;
                 overflow: auto;
-                background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.67),
-                        rgba(18, 162, 155, 0.8)), url("./Ressources/Design/Background-black.png");
+                background-image: url("./Ressources/Design/Background-black.png");
             }
 
 
@@ -198,16 +197,16 @@
             .close {
                 color: white;
                 position: absolute;
-                top: 20%;
-                right: 10%;
-                font-size: 50px;
+                top: 0%;
+                right: 15%;
+                font-size: 60px;
                 font-weight: bold;
-                text-decoration: none;
+                
             }
 
             .close:hover,
             .close:focus {
-                color: #d8d7d7;
+                color: #12a29b;
                 text-decoration: none;
                 cursor: pointer;
             }
@@ -235,7 +234,7 @@
 
             .cursor {
                 cursor: pointer;
-                top: 15%;
+                top: 0%;
                 right: 15%;
                 font-size: 60px
             }
@@ -349,13 +348,6 @@
 
             @media screen and (max-width:768px) {
 
-                .cursor {
-                    top: 25%
-                }
-                
-                .cursor {
-                    right: 8%
-                }
 
                 .next {
                     right: 3px;
@@ -402,7 +394,7 @@
                     margin: 0 auto;
                     justify-content: center;
                     flex-direction: column;
-                    height: 80vh;
+                    height: 100vh;
                 }
 
                 .mySlides {
@@ -447,7 +439,7 @@
                         <img src="Ressources/Crea/Affiches/Affiche-ASM14.png" style="height:250px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
                     <div class="column">
-                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Am%C3%A9ricaine%20web.jpg" style="height:250px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e-Am%C3%A9ricaine-web.png" style="height:250px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                     </div>
                     <div class="column">
                         <img src="Ressources/Crea/Affiches/Recto-2018-portes-ouvertes-web.jpg" style="height:250px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
@@ -580,16 +572,17 @@
                 </div>
             </div>
 
-            <div id="myModal" class="modal mt-5 mb-5 pb-5">
+            <div id="myModal" class="modal mb-5 pb-5">
                
-                <div class="row mt-5">
+                <div class="row">
             <div class="col-md-12">
                 <h4 class="top-titres text-center pt-5 mt-5 pb-2">AFFICHES & FLYERS</h4>
 
             </div>
         </div>
-                <span class="close cursor" onclick="closeModal()">&times;</span>
+                
                 <div class="modal-content text-center ">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
                    
                    
 
@@ -608,7 +601,7 @@
                         </div>
 
                         <div class="mySlides">
-                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Am%C3%A9ricaine%20web.jpg">
+                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e-Am%C3%A9ricaine-web.png">
                         </div>
 
                         <div class="mySlides">
@@ -739,7 +732,7 @@
                         <img class="demo cursor" src="Ressources/Crea/Affiches/Affiche-ASM14.png" onclick="currentSlide(1)">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e%20Am%C3%A9ricaine%20web.jpg" onclick="currentSlide(2)">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e-Am%C3%A9ricaine-web.png" onclick="currentSlide(2)">
                     </div>
                     <div class="column">
                         <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Affiches/Recto-2018-portes-ouvertes-web.jpg" onclick="currentSlide(3)">
