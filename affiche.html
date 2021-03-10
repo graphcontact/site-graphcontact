@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset-eric-mayer.css">
-    
+
 
 
     <!---pages---->
@@ -63,47 +63,47 @@
     <!-----NAVBAR---------------
             =============== -->
 
-    
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.77)">
 
-            <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.77)">
 
-                <a class="navbar-brand" href="index.html">
-                    <h1 class="text-white mt-3">Graph<span class="mots-vert" style="font-size: 40px">'</span>Contact</h1>
-                </a>
+        <div class="container">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="monMenu" aria-label="Menu pour mobile">
-                    <span data-brackets-id='1409' class="navbar-toggler-icon"></span>
-                </button>
+            <a class="navbar-brand" href="index.html">
+                <h1 class="text-white mt-3">Graph<span class="mots-vert" style="font-size: 40px">'</span>Contact</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="monMenu" aria-label="Menu pour mobile">
+                <span data-brackets-id='1409' class="navbar-toggler-icon"></span>
+            </button>
 
 
 
-                <div class="collapse navbar-collapse pr-5 mr-5" id="monMenu">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-items nav-link" style="font-size: 15px" href="index.html">
-                            <span>HOME</span>
-                        </a>
-                        <a class="nav-items nav-link" style="font-size: 15px" href="index.html#apropos">
-                            <span>A PROPOS</span>
-                        </a>
-                        <div class="dropdown">
-                            <a class="dropdown-toggle nav-items nav-link text-white" data-toggle="dropdown" style="font-size: 15px"><span>PORTFOLIO</span>
-                        <span class="caret"></span></a>
+            <div class="collapse navbar-collapse pr-5 mr-5" id="monMenu">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-items nav-link" style="font-size: 15px" href="index.html">
+                        <span>HOME</span>
+                    </a>
+                    <a class="nav-items nav-link" style="font-size: 15px" href="index.html#apropos">
+                        <span>A PROPOS</span>
+                    </a>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle nav-items nav-link text-white" data-toggle="dropdown" style="font-size: 15px"><span>PORTFOLIO</span>
+                            <span class="caret"></span></a>
                         <ul class="dropdown-menu pl-4 pr-4" style="background: rgba(0, 0, 0, 0.77)">
-          <li><a href="affiche.html"><span>Affiches et Flyers</span></a></li>
-          <li><a href="logos.html"><span>Logos</span></a></li>
-          <li><a href="#"><span>Supports variés</span></a></li>
-        </ul>
-      </div>
-
-                        <a class="nav-items nav-link" style="font-size: 15px" href="">
-                            <span>CONTACT</span>
-                        </a>
+                            <li><a href="affiche.html"><span>Affiches et Flyers</span></a></li>
+                            <li><a href="logos.html"><span>Logos</span></a></li>
+                            <li><a href="#"><span>Supports variés</span></a></li>
+                        </ul>
                     </div>
-                </div>
 
+                    <a class="nav-items nav-link" style="font-size: 15px" href="">
+                        <span>CONTACT</span>
+                    </a>
+                </div>
             </div>
-        </nav>
+
+        </div>
+    </nav>
 
 
 
@@ -115,7 +115,7 @@
         <div class="row pt-5 mt-5">
             <div class="col-md-12">
                 <h4 class="top-titres text-center pt-5 pb-2">AFFICHES & FLYERS</h4>
-                
+
             </div>
         </div>
 
@@ -129,7 +129,7 @@
             }
 
             .row>.column {
-                padding: 0 8px;
+                padding: 0 5px;
             }
 
             .row:after {
@@ -141,17 +141,26 @@
             .top-slide img {
                 display: flex;
                 flex-flow: row nowrap;
-            
+
             }
-            
+
             .column-1 {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center
             }
-            
+
+            .column-1 img {
+                margin: 0 auto;
+                justify-content: center;
+                text-align: center;
+                align-content: center;
+                max-width: 100%;
+
+            }
+
             .column {
-                
+
                 text-align: center;
                 margin: 0 auto;
                 padding: 10px;
@@ -164,33 +173,32 @@
                 display: none;
                 position: fixed;
                 z-index: 1;
-                padding-top: 100px;
-                left: 0;
-                top: 0;
-                width: 100vw;
+                padding-top: 5em;
+                max-width: 100vw;
                 height: 100%;
                 overflow: auto;
                 background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.67),
-            rgba(18, 162, 155, 0.8)), url("./Ressources/Design/Background-black.png");
+                        rgba(18, 162, 155, 0.8)), url("./Ressources/Design/Background-black.png");
             }
 
-        
-            
+
+
             /* Modal Content */
             .modal-content {
                 position: relative;
                 background-color: transparent;
+                border: transparent;
                 margin: auto;
-                width: 90%;
+                max-width: 85%;
                 max-width: 90%;
-                margin-top: 5%
+                
             }
 
             /* The Close Button */
             .close {
                 color: white;
                 position: absolute;
-                top: 15%;
+                top: 20%;
                 right: 10%;
                 font-size: 50px;
                 font-weight: bold;
@@ -208,55 +216,75 @@
                 display: flex;
                 justify-content: center;
                 align-content: center;
-                width: 100%;
+                width: 100vw;
                 margin: 0 auto;
                 padding: 0 2% 0 2%
-                
             }
-            
+
             .mySlides img {
                 text-align: center;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 align-content: center;
+                max-width: 400px;
+                height: 565px;
 
-                  
+
             }
 
             .cursor {
                 cursor: pointer;
                 top: 15%;
-                right: 10%;
-                font-size: 50px
+                right: 15%;
+                font-size: 60px
             }
 
             /* Next & previous buttons */
             .prev,
             .next {
-                position: absolute;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                top: 14%;
                 cursor: pointer;
                 position: absolute;
-                width: 300px;
-                padding: 16px;
+                width: 10px;
                 color: white;
                 font-weight: bold;
                 font-size: 40px;
                 transition: 0.4s ease;
-                border-radius: 0 3px 3px 0;
                 user-select: none;
                 -webkit-user-select: none;
-                
+
             }
 
-            /* Position the "next button" to the right */
+            .img-next {
+                
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                
+
+            }
+
+            .img-next a {
+                text-align: center;
+                margin: 0 auto;
+                justify-content: center;
+
+            }
+
+            /* Position the "next & prev button" to the right & left */
             .next {
-                right: 0%;
+                text-align: right;
+                right: 20%;
                 border-radius: 3px 0 0 3px;
+                display: flex;
+            }
+
+            .prev {
+                text-align: left;
+                left: 20%;
+                border-radius: 3px 3px 0 0;
+                display: flex;
             }
 
             /* On hover, add a black background color with a little bit see-through */
@@ -265,18 +293,23 @@
                 background-color: rgba(0, 0, 0, 0.01);
                 text-decoration: none;
                 color: rgba(255, 255, 255, 0.72);
-                transform: scale(1.5,1.5)
+                transform: scale(1.5, 1.5)
             }
 
             /* Number text (1/3 etc) */
-            
+
 
             img {
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
                 margin-bottom: -4px;
                 border-radius: 2%;
-                height: 150px;
-                max-width: 700px
-                
+                height: 300px;
+                max-width: 300px
             }
 
             .caption-container {
@@ -289,6 +322,13 @@
                 opacity: 0.6;
                 display: flex;
                 flex-flow: row wrap;
+                width: 92px;
+                height: auto
+            }
+
+            .img-demo {
+                width: 80vw;
+                margin: 0 auto
             }
 
             .active,
@@ -304,244 +344,532 @@
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
 
-            
-            
+            /* *****MEDIA QUERY*******************************
+            ========================= */
+
+            @media screen and (max-width:768px) {
+
+                .cursor {
+                    top: 25%
+                }
+                
+                .cursor {
+                    right: 8%
+                }
+
+                .next {
+                    right: 3px;
+
+                }
+
+                .prev {
+                    left: 3px;
+                }
+
+                .top-slide img {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+
+                .column-1 {
+                    margin: 0 auto;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100vw;
+                }
+
+                .column-1 img {
+                    margin: 0 auto;
+                    justify-content: center;
+                    text-align: center;
+                    align-content: center;
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+
+                .column {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+
+                }
+
+                .modal {
+                    display: flex;
+                    margin: 0 auto;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 80vh;
+                }
+
+                .mySlides {
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100vw;
+                    flex-flow: row nowrap
+                }
+
+                .mySlides img {
+                    margin: 0 auto;
+                    text-align: center;
+                    width: auto;
+                    height: 300px
+                }
+
+                .demo {
+                    max-width: 100%;
+                    max-height: 150px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+            }
+
         </style>
-        
+
+
+
         <!--------HTML------->
 
         <body>
 
-            
 
-            <div class="container m-auto text-center row top-slide pt-5 pr-5 pl-5">
-              
-               <div class="column-1 m-auto">
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:250px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+            <div class="m-auto text-center row top-slide pr-5 pl-5 mr-5 ml-5">
+
+                <div class="column-1">
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Affiche-ASM14.png" style="height:250px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Am%C3%A9ricaine%20web.jpg" style="height:250px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Recto-2018-portes-ouvertes-web.jpg" style="height:250px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Verso%20portes-ouvertes.jpg" style="height:250px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Recto_Flyer-WTD_web.png" style="height:250px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Verso-Flyer-WTD_web.png" style="height:250px" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Ne%20fermez%20pas%20le%20cercueil%20web.jpg" style="height:250px" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Fouace.jpg" style="height:250px" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/ASM13-Affiche-web.png" style="height:250px" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Festiminus%20FLY%20ASM12.jpg" style="height:250px" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/verso%20Festiminus%20ASM12.jpg" style="height:250px" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Affiche-20-ans-BANDA.png" style="height:250px" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/PORTES-OUVERTES%2018%20web.jpg" style="height:250px" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/PORTES-OUVERTES%20web.jpg" style="height:250px" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/30-ans-Foyer.png" style="height:250px" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+                    </div>
+
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/soir%C3%A9e%20orientale%20web.jpg" style="height:250px" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20r%C3%A9unionnaise.jpg" style="height:250px" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+                    </div>
+
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Ca-se-complique-web.png" style="height:250px" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Impair%20&%20P%C3%A8re.jpg" style="height:250px" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Recto-Flyer-Handyman.png" style="height:250px" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Verso-Flyer-Handyman.png" style="height:250px" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20BLOUGE.jpg" style="height:250px" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Black%20and%20White%20web.jpg" style="height:250px" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/No%C3%ABl-s'en-M%C3%AAle.png" style="height:250px" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/FETE%20DE%20LA%20MUSIQUE%202019.jpg" style="height:250px" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/R%C3%AAve%20Party%20web.jpg" style="height:250px" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/No%C3%ABl%20en%20Man%C3%A8ge%202019.jpg" style="height:250px" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Affiche%20lavage%20auto%202017%20web.jpg" style="height:250px" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/soiree-bretonne-affiche-web-1.jpg" style="height:250px" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/La%20t%C3%A9l%C3%A9%20commande%20web.jpg" style="height:250px" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Bavaroise%202017%20web.jpg" style="height:250px" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Affiche%2080%20ANS%20ASL%20web.jpg" style="height:250px" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Coupe%20du%20Monde%20web.jpg" style="height:250px" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Feu%20Mr%20de%20Marcy%20web.jpg" style="height:250px" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Gospel%20web.jpg" style="height:250px" onclick="openModal();currentSlide(35)" class="hover-shadow cursor">
+                    </div>
+                    
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Flyer%20Optique%20la%20Bruffi%C3%A8re.jpg" style="height:250px" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="Ressources/Crea/Affiches/Fyer%20Viva%20la%20Vie%20(3).jpg" style="height:250px" onclick="openModal();currentSlide(37)" class="hover-shadow cursor">
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
                 </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" style="height:250px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png" style="height:250px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg" style="height:250px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img  src="Ressources/Crea/Logos/HOLISPORT%20web.jpg" style="height:250px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png" style="height:250px" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-                </div>
-                
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png" style="height:250px" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png" style="height:250px" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Hilda%20Cover.jpg" style="height:250px" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo-ACP.png" style="height:250px" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img  src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg" style="height:250px" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg" style="height:250px" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg" style="height:250px" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg" style="height:250px" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/Logo%20Tvert.png" style="height:250px" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
-                </div>
-                
-                
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png" style="height:250px" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
-                </div>
-                
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/I-VENT.jpg" style="height:250px" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
-                </div>
-                
-                
-                <div class="column">
-                    <img src="Ressources/Crea/Logos/CERUM-logo-marque.png" style="height:250px" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
-                </div>
-                
-                
-                
-                
-                </div>
+            </div>
+
+            <div id="myModal" class="modal mt-5 mb-5 pb-5">
                
-            </div>
+                <div class="row mt-5">
+            <div class="col-md-12">
+                <h4 class="top-titres text-center pt-5 mt-5 pb-2">AFFICHES & FLYERS</h4>
 
-            <div id="myModal" class="modal">
+            </div>
+        </div>
                 <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div data-brackets-id='1437' class="modal-content text-center">
-                    
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:450px">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" style="height:450px">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png" style="height:450px">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/HOLISPORT%20web.jpg" style="height:450px">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png" style="height:450px">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Hilda%20Cover.jpg" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo-ACP.png" style="height:450px">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg" style="height:450px">
-                    </div>
-
-                   <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg" style="height:450px">
-                    </div>
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg" style="height:450px">
-                    </div>
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/Logo%20Tvert.png" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png" style="height:450px">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/I-VENT.jpg" style="height:450px">
-                    </div>
-                    
-    
-                    
-                    <div class="mySlides">
-                        <img src="Ressources/Crea/Logos/CERUM-logo-marque.png" style="height:450px">
-                    </div>
-                    
-
+                <div class="modal-content text-center ">
                    
-                <div class="img demo pt-5">
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Havane%20cr%C3%A8me%20web.jpg" style="height:200px" onclick="currentSlide(1)">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-West-Truck-Design_.png" style="height:200px" onclick="currentSlide(2)">
-                    </div>
-                    <div class="column">
-                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Logos/Logo-%C3%A9ventail-+-web.png" style="height:200px" onclick="currentSlide(3)">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/LINE-UP-logo-HD.jpg" style="height:200px" onclick="currentSlide(4)">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/HOLISPORT%20web.jpg" style="height:200px" onclick="currentSlide(5)">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Raquettes-st-aubinoises.png"style="height:200px" onclick="currentSlide(6)">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Coupe_Cyan_FCTL(1).png"style="height:200px" onclick="currentSlide(7)">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-Mano-Cr%C3%A9ation.png" style="height:200px" onclick="currentSlide(8)">
-                    </div>
-                    
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Hilda%20Cover.jpg" style="height:200px" onclick="currentSlide(9)">
-                    </div>
-                    
-                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo-ACP.png" style="height:200px" onclick="currentSlide(10)">
-                    </div>
-                    
-                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Bazoges%20Ecole%20Saint%20Pierre.jpg" style="height:200px" onclick="currentSlide(11)">
-                    </div>
-                    
-                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Plein%20Ecran.jpg" style="height:200px" onclick="currentSlide(12)">
-                    </div>
-                    
-                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/logo%20Rond%20ASM%202020.jpg" style="height:200px" onclick="currentSlide(13)">
-                    </div>
-                    
-                     <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20the%20chemist%20web.jpg" style="height:200px" onclick="currentSlide(14)">
-                    </div>
-                    
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/Logo%20Tvert.png" style="height:200px" onclick="currentSlide(15)">
-                    </div>
-                    
-                    
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/SARL%20Aur%C3%A9lien%20TETEDOIE.png"style="height:200px" onclick="currentSlide(16)">
-                    </div>
-                    
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/I-VENT.jpg"style="height:200px" onclick="currentSlide(17)">
-                    </div>
-                    
-                    
-                    <div class="column">
-                        <img class="demo cursor" src="Ressources/Crea/Logos/CERUM-logo-marque.png" style="height:200px" onclick="currentSlide(18)">
-                    </div>
+                   
+
+                    <div class="img-next mt-5 mb-5">
+
+
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Affiche-ASM14.png">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Am%C3%A9ricaine%20web.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Recto-2018-portes-ouvertes-web.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Verso%20portes-ouvertes.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Recto_Flyer-WTD_web.png">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Verso-Flyer-WTD_web.png">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Ne%20fermez%20pas%20le%20cercueil%20web.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Fouace.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/ASM13-Affiche-web.png">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Festiminus%20FLY%20ASM12.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/verso%20Festiminus%20ASM12.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Affiche-20-ans-BANDA.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/PORTES-OUVERTES%2018%20web.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/PORTES-OUVERTES%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/30-ans-Foyer.png">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/soir%C3%A9e%20orientale%20web.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20r%C3%A9unionnaise.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Ca-se-complique-web.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Impair%20&%20P%C3%A8re.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Recto-Flyer-Handyman.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Verso-Flyer-Handyman.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20BLOUGE.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Black%20and%20White%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/No%C3%ABl-s'en-M%C3%AAle.png">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/FETE%20DE%20LA%20MUSIQUE%202019.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/R%C3%AAve%20Party%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/No%C3%ABl%20en%20Man%C3%A8ge%202019.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Affiche%20lavage%20auto%202017%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/soiree-bretonne-affiche-web-1.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/La%20t%C3%A9l%C3%A9%20commande%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Bavaroise%202017%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Affiche%2080%20ANS%20ASL%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Soir%C3%A9e%20Coupe%20du%20Monde%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Feu%20Mr%20de%20Marcy%20web.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Gospel%20web.jpg">
+                        </div>
+                       
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Flyer%20Optique%20la%20Bruffi%C3%A8re.jpg">
+                        </div>
+                        <div class="mySlides">
+                            <img src="Ressources/Crea/Affiches/Fyer%20Viva%20la%20Vie%20(3).jpg">
+                        </div>
+                        
+                        </div>
                     
                 </div>
-                 
+
+                <div class="img-demo demo pt-5">
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Affiche-ASM14.png" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e%20Am%C3%A9ricaine%20web.jpg" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img data-brackets-id='1457' class="demo cursor" src="Ressources/Crea/Affiches/Recto-2018-portes-ouvertes-web.jpg" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Verso%20portes-ouvertes.jpg" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Recto_Flyer-WTD_web.png" onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Verso-Flyer-WTD_web.png" onclick="currentSlide(6)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Ne%20fermez%20pas%20le%20cercueil%20web.jpg" onclick="currentSlide(7)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e%20Fouace.jpg" onclick="currentSlide(8)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/ASM13-Affiche-web.png" onclick="currentSlide(9)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Festiminus%20FLY%20ASM12.jpg" onclick="currentSlide(10)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/verso%20Festiminus%20ASM12.jpg" onclick="currentSlide(11)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Affiche-20-ans-BANDA.png" onclick="currentSlide(12)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/PORTES-OUVERTES%2018%20web.jpg" onclick="currentSlide(13)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/PORTES-OUVERTES%20web.jpg" onclick="currentSlide(14)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/30-ans-Foyer.png" onclick="currentSlide(15)">
+                    </div>
+
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/soir%C3%A9e%20orientale%20web.jpg" onclick="currentSlide(16)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e%20r%C3%A9unionnaise.jpg" onclick="currentSlide(17)">
+                    </div>
+
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Ca-se-complique-web.png" onclick="currentSlide(18)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Impair%20&%20P%C3%A8re.jpg" onclick="currentSlide(19)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Recto-Flyer-Handyman.png" onclick="currentSlide(20)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Verso-Flyer-Handyman.png" onclick="currentSlide(21)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e%20BLOUGE.jpg" onclick="currentSlide(22)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Black%20and%20White%20web.jpg" onclick="currentSlide(23)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/No%C3%ABl-s'en-M%C3%AAle.png" onclick="currentSlide(24)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/FETE%20DE%20LA%20MUSIQUE%202019.jpg" onclick="currentSlide(25)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/R%C3%AAve%20Party%20web.jpg" onclick="currentSlide(26)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/No%C3%ABl%20en%20Man%C3%A8ge%202019.jpg" onclick="currentSlide(27)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Affiche%20lavage%20auto%202017%20web.jpg" onclick="currentSlide(28)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/soiree-bretonne-affiche-web-1.jpg" onclick="currentSlide(29)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/La%20t%C3%A9l%C3%A9%20commande%20web.jpg" onclick="currentSlide(30)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Bavaroise%202017%20web.jpg" onclick="currentSlide(31)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Affiche%2080%20ANS%20ASL%20web.jpg" onclick="currentSlide(32)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Soir%C3%A9e%20Coupe%20du%20Monde%20web.jpg" onclick="currentSlide(33)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Feu%20Mr%20de%20Marcy%20web.jpg" onclick="currentSlide(34)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Gospel%20web.jpg" onclick="currentSlide(35)">
+                    </div>
+                    
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Flyer%20Optique%20la%20Bruffi%C3%A8re.jpg" onclick="currentSlide(36)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Ressources/Crea/Affiches/Fyer%20Viva%20la%20Vie%20(3).jpg" onclick="currentSlide(37)">
+                    </div>
+                    
+
                 </div>
-                
+
+
+
             </div>
 
-           <!--------JAVASCRIPT------->
-           
+            <!--------JAVASCRIPT------->
+
             <script>
                 function openModal() {
                     document.getElementById("myModal").style.display = "block";
@@ -590,16 +918,36 @@
         </body>
 
 
+
+
+
+
+
+
     </section>
 
 
 
+    <!--------------FOOTER-------------
+          =============== -->
+
+
+
+    <footer class="pt-3 pb-3 m-auto text-center">
+        <p><i class="fas fa-user" style="color:#12a29b"></i> Pierre CHIRON <i class="fas fa-home" style="color:#12a29b"></i> 85130 Les Landes-Genusson</p>
+        <p><i class="fas fa-envelope" style="color:#12a29b"></i> graphcontact.mail@gmail.com <i class="fas fa-mobile-alt" style="color:#12a29b"></i> 06 13 47 73 25</p>
+        <a href="https://www.facebook.com/graphcontact/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/graph_contact/" target="_blank"><i class="fab fa-instagram-square fa-2x mr-3 ml-3"></i></a>
+        <a href="https://www.linkedin.com/in/pierre-chiron/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+
+
+    </footer>
 
 
 
 
 
-  <!-----SCRIPT-------->
+    <!-----SCRIPT-------->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
