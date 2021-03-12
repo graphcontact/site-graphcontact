@@ -5,15 +5,12 @@ if (get_magic_quotes_gpc())
 {
  $nom = stripslashes(trim($_POST['nom']));
  $prenom = stripslashes(trim($_POST['prenom']));
- $dossier = stripslashes(trim($_POST['dossier']));    
- $societe = stripslashes(trim($_POST['societe']));
- $rcs = stripslashes(trim($_POST['rcs']));
- $code = stripslashes(trim($_POST['code']));
- $ville = stripslashes(trim($_POST['ville']));
+    
+
  $telephone = stripslashes(trim($_POST['telephone']));
- $fax = stripslashes(trim($_POST['fax']));
+
  $mail = stripslashes(trim($_POST['mail']));
- $motif = stripslashes(trim($_POST['motif']));
+ 
  $message = stripslashes(trim($_POST['message']));
 }     
 else      
@@ -53,16 +50,11 @@ if (!empty($alert))
 /* On vérifie qu'il n'y a aucun header dans les champs */ 
 if (preg_match($regex_head, $nom)
  || preg_match($regex_head, $prenom)
- || preg_match($regex_head, $dossier)
- || preg_match($regex_head, $societe)
- || preg_match($regex_head, $rcs)
- || preg_match($regex_head, $adresse)
- || preg_match($regex_head, $code)
- || preg_match($regex_head, $ville)
+
  || preg_match($regex_head, $telephone)
- || preg_match($regex_head, $fax)
+
  || preg_match($regex_head, $mail)
- || preg_match($regex_head, $motif)
+ 
  || preg_match($regex_head, $message))
 {  
  $alert = 'En-têtes interdites dans les champs du formulaire'; 
@@ -106,19 +98,15 @@ $msg = '';
 /*$msg = 'Mail envoye depuis le site' "rnrn";*/
 $msg .= 'Nom : '.$nom."rnrn";
 $msg .= 'Prenom : '.$prenom."rnrn";
-$msg .= 'Dossier : '.$dossier."rnrn";
-$msg .= 'Societe : '.$societe."rnrn";
-$msg .= 'RCS : '.$rcs."rnrn";
-$msg .= 'Adresse : '.$adresse."rnrn";
-$msg .= 'Code : '.$code."rnrn";
-$msg .= 'Ville : '.$ville."rnrn";
+
+
 $msg .= 'Telephone : '.$telephone."rnrn";
-$msg .= 'Fax : '.$fax."rnrn";
+
 $msg .= 'Mail : '.$mail."rnrn";
-$msg .= 'Motif : '.$motif."rnrn";
+
 $msg .= 'Message : '.$message."rnrn";
 /*Les en-têtes du mail*/
-$headers = 'From: MESSAGE DU SITE FAFA<graphcontact.mail@gmail.com>'."rn";
+$headers = 'From: MESSAGE DU SITE GRAPH CONTACT<graphcontact.mail@gmail.com>'."rn";
 $headers .= "rn";
 /*L'envoi du mail - Et page de redirection*/
 mail($to, $sujet, $msg, $headers);
