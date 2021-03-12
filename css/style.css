@@ -32,6 +32,11 @@ h3 {
 
 }
 
+html h2 {
+    font-family: "Generica", sans-serif;
+    font-size: 160%
+}
+
 h1 {
     font-family: 'Mustardo', sans-serif;
     color: #12a29b;
@@ -131,14 +136,10 @@ section {
     align-content: center;
     align-items: center;
     text-align: center;
-    width: 140%;
-    line-height: 170%
+    width: 150%;
+    line-height: 40px
 }
-
-.dropdown-toggle span {
-
-}
-    
+ 
 
 
 /* ***TITRES**** */
@@ -347,6 +348,29 @@ header {
     background-image: url("../Ressources/Design/Background-black.png")
 }
 
+/* **** PAGE CONTACT ***** 
+======================== */
+
+.pierre{
+    width: 70%;
+    border-top: 3px #12a29b solid;
+
+}
+
+.networks i {
+    color: #12a29b
+}
+
+.networks i:hover {
+    color: white;
+    transform: scale(1.2,1.2);
+}
+
+.zone-texte {
+    
+    
+    
+}
 
 /* **** FOOTER ***** 
 ======================== */
@@ -384,4 +408,12 @@ footer {
 }
 
 
+/* *********RESPONSIVE************* */
 
+@media screen and (max-width:768px){
+
+    .dropdown-menu {
+    line-height: 40px;
+    }
+    
+}
