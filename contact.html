@@ -64,48 +64,49 @@
     <!-----NAVBAR---------------
             =============== -->
 
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: rgba(18, 162, 155, 0.9)">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="Ressources/Design/nav-logographcontact.png" class="logo-nav">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.77)">
 
-        <div class="container">
+                <div class="collapse navbar-collapse pr-5 mr-5" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-items nav-link" style="font-size: 15px" href="index.html">
+                            <span>HOME</span>
+                        </a>
+                        <a class="nav-items nav-link" style="font-size: 15px" href="index.html#apropos">
+                            <span>A PROPOS</span>
+                        </a>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-items nav-link text-white" data-toggle="dropdown" style="font-size: 15px"><span>PORTFOLIO</span>
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu pl-4 pr-4" style="background: rgba(18, 162, 155, 0.9)">
+                                <li><a href="affiche.html"><span>Affiches et Flyers</span></a></li>
+                                <li><a href="logos.html"><span>Logos</span></a></li>
+                                <li><a href="supports.html"><span>Supports variés</span></a></li>
+                            </ul>
+                        </div>
 
-            <a class="navbar-brand" href="index.html">
-                <h1 class="text-white mt-3">Graph<span class="mots-vert" style="font-size: 40px">'</span>Contact</h1>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="monMenu" aria-label="Menu pour mobile">
-                <span data-brackets-id='1409' class="navbar-toggler-icon"></span>
-            </button>
-
-
-
-            <div class="collapse navbar-collapse pr-5 mr-5" id="monMenu">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-items nav-link" style="font-size: 15px" href="index.html">
-                        <span>HOME</span>
-                    </a>
-                    <a class="nav-items nav-link" style="font-size: 15px" href="index.html#apropos">
-                        <span>A PROPOS</span>
-                    </a>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle nav-items nav-link text-white" data-toggle="dropdown" style="font-size: 15px"><span>PORTFOLIO</span>
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu pl-4 pr-4" style="background: rgba(0, 0, 0, 0.77)">
-                            <li><a href="affiche.html"><span>Affiches et Flyers</span></a></li>
-                            <li><a href="logos.html"><span>Logos</span></a></li>
-                            <li><a href="supports.html"><span>Supports variés</span></a></li>
-                        </ul>
+                        <a class="nav-items nav-link" style="font-size: 15px" href="contact.html">
+                            <span>CONTACT</span>
+                        </a>
                     </div>
-
-                    <a class="nav-items nav-link" style="font-size: 15px" href="contact.html">
-                        <span>CONTACT</span>
-                    </a>
                 </div>
-            </div>
 
-        </div>
-    </nav>
+            </div>
+        </nav>
+</header>
 
     <!------CONTACT------------------->
 
@@ -123,8 +124,9 @@
 
         <div class="row pt-5 pl-5 ml-5">
 
-            <div class="col-md-5 pl-5 ml-5">
-                <h1>Un projet ?</h1>
+            <div class="col-md-6">
+                <h4 style="font-size: 40px">Vous avez besoin de mes compétences<br>
+                en création graphique ?</h4>
                 <h2>Ecrivez-moi ! <br> Nous en discuterons.</h2>
 
                 <div class="pt-5">
@@ -155,24 +157,23 @@
    ================================= -->
 
         
-            <div class="col-md-6">
+            <div class="col-md-4 text-center">
 
 
                 <form action="mail.php" method="post">
-                    <p>Nom<span style="color: #ff0000;">*</span> :</p><label for="nom"></label><input id="nom" name="nom" size="30" type="text" /><br><br>
+                    <label for="nom"><p>Votre Nom<span style="color: #ff0000;">*</span> :</p></label><input class="mb-1" id="nom" name="nom" size="51" type="text" /><br>
 
-                        <p>Prénom :</p>
-                        <label for="prenom"></label><input id="prenom" name="prenom" size="30" type="text" /><br><br>
+                        
 
-                        <p>Téléphone<span style="color: #ff0000;">*</span> :</p><label for="telephone"></label><input id="telephone" name="telephone" size="30" type="text" /> <br><br>
+                       <label for="telephone"> <p>Votre téléphone<span style="color: #ff0000;">*</span> :</p></label><input class="mb-1" id="telephone" name="telephone" size="51" type="text" /> <br>
 
-                       <p> Mail<span style="color: #ff0000;">*</span> :</p><label for="mail"> </label><input id="mail" name="mail" size="51" type="text" /> <br> <br>
+                       <label for="mail"><p>Votre email<span style="color: #ff0000;">*</span> :</p> </label><input class="mb-1" id="mail" name="mail" size="51" type="text" /> <br>
                     
 
-                    <p>Message <span style="color: #ff0000;">*</span> :</p>
+                    <label for="message"><p>Votre Message <span style="color: #ff0000;">*</span> :</p></label>
                     <div class="zone-texte">
-                    <label for="message"></label><textarea id="message" cols="50" rows="7" name="message"></textarea><br>
-                    <input type="submit" value="Envoyer" cols="20" class="btn-galerie text-center" />
+                    <textarea id="message" cols="51" rows="10" name="message" placeholder="Saisissez-votre message"></textarea><br>
+                    <a href="mailto:graphcontact.mail@gmail.com"><input type="submit" value="Envoyer" cols="20" class="btn-galerie text-center" /></a> 
                     </div>
                 </form>
 

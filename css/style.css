@@ -10,9 +10,8 @@ couleurs titre:  vert #12a29b
     font-style: normal;
     font-weight: 400;
     src:
-        url("../Ressources/mustardo.ttf")
-        format('truetype'),
-    
+        url("../Ressources/mustardo.ttf") format('truetype'),
+
 }
 
 html {
@@ -29,7 +28,6 @@ h2,
 h3 {
     color: white;
     letter-spacing: 2px
-
 }
 
 html h2 {
@@ -108,26 +106,25 @@ section {
     color: white;
     padding: 0 5px 0 5px;
     letter-spacing: 3px
-    
 }
 
 .nav-items span:hover {
-    color: #12a29b;
+    color: black;
     transform: scale(1.1, 1.1);
     transition: 0.6s;
-    
+
 }
 
 .dropdown a {
     color: white;
     font-family: "Generica", sans-serif;
     text-transform: uppercase;
-    width: 
+    width:
 
 }
 
 .dropdown a:hover {
-    color: #12a29b;
+    color: black;
     transition: 0.6s;
     text-decoration: inherit
 }
@@ -139,8 +136,11 @@ section {
     width: 150%;
     line-height: 40px
 }
- 
 
+.logo-nav {
+    width: 200px;
+    height: auto
+}
 
 /* ***TITRES**** */
 
@@ -156,7 +156,7 @@ section {
     color: white;
     font-size: 300%;
     font-family: 'Quicksand', sans-serif;
-    padding: 0% 0 2% 0 
+    padding: 0% 0 2% 0
 }
 
 /* *****BUTTONS***** */
@@ -186,17 +186,14 @@ section {
     text-decoration: none;
     text-transform: none;
     box-shadow: #12a29b 0px 3px 0px 0px
-    
-
 }
 
 /* **** HEADER ***** 
 ====================== */
 
-header {
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.97),
-            rgba(0, 114, 109, 0.97),  rgba(18, 162, 155, 0.91)), url("../Ressources/Design/Post-Insta.png");
-    height: 100vh;
+.header {
+    background-image: url("../Ressources/Design/Background-black.png");
+    height: 70vh;
     width: 100vw;
     background-position: center;
     background-size: cover;
@@ -206,9 +203,9 @@ header {
 }
 
 #logo {
-    width: 30vw;
+    width: 20vw;
     margin: 0 auto;
-    padding-top: 8.5vh;
+     
 
 }
 
@@ -218,7 +215,7 @@ header {
 
 .services {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.46), rgb(0, 0, 0)), url("../Ressources/Design/Background-black.png");
+            rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.9)), url("../Ressources/Design/Background-black.png");
     height: 100%;
     width: 100vw;
     background-attachment: fixed;
@@ -232,7 +229,10 @@ header {
     font-family: "Generica", sans-serif;
     font-size: 130%;
     line-height: 40px
-    
+}
+
+.services h4 {
+    font-size: 30px;
 }
 
 .services i {
@@ -245,12 +245,12 @@ header {
     transition: 0.5s
 }
 
-/* **** GALERIE ***** 
+/* **** PORTFOLIO ***** 
 ======================== */
 
 .portfolio {
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.67),
-            rgba(18, 162, 155, 0.8)), url("../Ressources/Design/Background-black.png");
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.46), rgb(0, 0, 0)), url("../Ressources/Design/Background-black.png");
     height: 100%;
     width: 100vw;
     background-position: center;
@@ -262,38 +262,225 @@ header {
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 80%
 }
 
-.print img {
-    width: 80%;
+.print img,
+print {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 50px 1px;
+    padding: 20px
+}
+
+.categorie {
+    padding-top: 2%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.categorie a div {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.cover {
+    position: relative;
+    width: 565px;
+    max-width: 565px;
+    height: 385px;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.text-portfolio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #12a29b;
+    padding: 5%;
+    width: 565px;
+    max-width: 565px;
+    
+}
+
+
+.voir {
+    position: absolute;
+    background-color: #12a29b;
+    color: white;
+    font-size: 16px;
+    width: 65px;
+    height: 55px;
+    right: 0%;
+    top: 0%
+
+
+}
+
+.text-voir {
+    position: absolute;
+    text-align: center;
+    right: 15%;
+    top: 30%
+    
+}
+
+
+/*AFFICHES*/
+
+
+.zoom-1 {
+    
+    background-image: url("../Ressources/Design/cover-flyer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 50px 1px
 }
 
-.covers:hover {
-    transform: rotate(1deg) scale(1.02);
-    transition: 0.6s;
+.zoom-1 a {
+    display: block;
+}
+
+.zoom-1:hover {
+    background-image: url("../Ressources/Design/zoom-cover-flyer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 60%;
+    transition: 0.5s;
+    margin: 0 auto;
+
+}
+
+.zoom-1:active {
+    background-image: url("../Ressources/Design/cover-flyer.png");
+    opacity: 50%;
+    transition: 0s;
+
+
+}
+
+/*LOGOS*/
+
+.zoom-2 {
+
+    background-image: url("../Ressources/Design/Cover-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 50px 1px
+}
+
+.zoom-2 a {
+    display: block;
+}
+
+.zoom-2:hover {
+    background-image: url("../Ressources/Design/zoom-Cover-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+    margin: 0 auto;
+    opacity: 60%;
+
+}
+
+.zoom-2:active {
+    background-image: url("../Ressources/Design/Cover-logo.png");
+    opacity: 50%;
+    transition: 0s;
+
 
 }
 
 
-#texte-portfolio {
-    width: 100%
+/*SUPPORTS VARIES*/
+
+.zoom-3 {
+
+    background-image: url("../Ressources/Design/Cover-varies.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 50px 1px;
+    border-radius: 10
+}
+
+.zoom-3 a {
+    display: block;
+}
+
+.zoom-3:hover {
+    background-image: url("../Ressources/Design/zoom-Cover-varies.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+    margin: 0 auto;
+    opacity: 60%;
+
+}
+
+.zoom-3:active {
+    background-image: url("../Ressources/Design/Cover-varies.png");
+    opacity: 50%;
+    transition: 0s;
+
+
 }
 
 
-.logos-supports img {
-    width: 90%;
+/*WEBDESIGN*/
+
+.zoom-4 {
+
+    background-image: url("../Ressources/Design/Cover-webdesign.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 50px 1px
+}
+
+.zoom-4 a {
+    display: block;
+}
+
+.zoom-4:hover {
+    background-image: url("../Ressources/Design/zoom-Cover-webdesign.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+    margin: 0 auto;
+    opacity: 60%;
 
 }
+
+.zoom-4:active {
+    background-image: url("../Ressources/Design/Cover-webdesign.png");
+    opacity: 50%;
+    transition: 0s;
+
+
+}
+
+
+
+
+
 
 
 /* **** A PROPOS ***** 
 ======================== */
 
 .apropos {
-    background-image: linear-gradient(to top, rgba(188, 188, 188, 0.21), rgb(0, 0, 0)), url("../Ressources/Design/cover-a-propos copie.jpg");
+    background-image: linear-gradient(to top, rgba(18, 162, 155, 0.23), rgb(0, 0, 0), rgba(0, 0, 0, 0.05)), url("../Ressources/Design/cover-a-propos-copie.jpg");
     margin: 0 auto;
     height: 100%;
     width: 100vw;
@@ -341,7 +528,7 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-   
+
 }
 
 .body-logos {
@@ -351,7 +538,7 @@ header {
 /* **** PAGE CONTACT ***** 
 ======================== */
 
-.pierre{
+.pierre {
     width: 70%;
     border-top: 3px #12a29b solid;
 
@@ -363,13 +550,12 @@ header {
 
 .networks i:hover {
     color: white;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
-.zone-texte {
-    
-    
-    
+.enveloppe {
+    font-size: 350px;
+    color: #12a29b
 }
 
 /* **** FOOTER ***** 
@@ -395,12 +581,12 @@ footer a i:hover {
     color: #12a29b;
     transition: 0.5s;
     transform: scale(1.3, 1.3);
-    
+
 }
 
-footer div div p  {
+footer div div p {
     letter-spacing: 3px;
-    
+
 }
 
 footer {
@@ -410,10 +596,10 @@ footer {
 
 /* *********RESPONSIVE************* */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
     .dropdown-menu {
-    line-height: 40px;
+        line-height: 40px;
     }
-    
+
 }
